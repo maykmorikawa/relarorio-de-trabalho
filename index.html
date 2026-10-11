@@ -60,7 +60,7 @@
 <header class="top">
   <h1>Relatório de Atividades</h1>
   <p><strong>Colaborador:</strong> Mayk Morikawa · Desenvolvedor Full-Stack</p>
-  <p><strong>Período:</strong> junho a outubro de 2026 · <strong>Emitido em:</strong> 10/10/2026</p>
+  <p><strong>Período:</strong> junho a outubro de 2026 · <strong>Emitido em:</strong> 11/10/2026</p>
 </header>
 
 <section>
@@ -73,8 +73,8 @@
     uso dessas ferramentas e mantenho atualizadas as imagens das obras no site da Leal Moreira.
   </p>
   <div class="kpis">
-    <div class="kpi"><b>21</b><span>projetos e sites trabalhados</span></div>
-    <div class="kpi"><b>198</b><span>commits (atualizações versionadas) no período</span></div>
+    <div class="kpi"><b>24</b><span>projetos e sites trabalhados</span></div>
+    <div class="kpi"><b>204</b><span>commits (atualizações versionadas) no período</span></div>
     <div class="kpi"><b>11</b><span>landing pages e sites institucionais</span></div>
     <div class="kpi"><b>2</b><span>novos módulos de portal (Casa LiV e painel)</span></div>
   </div>
@@ -193,6 +193,7 @@
     <ul>
       <li>Jogo de trilha para ensino de programação: o aluno avança casa a casa montando o código com peças, com painel do professor e progresso por trilha.</li>
       <li>Inclusão de nova trilha de conteúdo (literatura — realismo), ampliando o uso da plataforma para outras disciplinas.</li>
+      <li>Publicação no novo servidor (easyreg.net.br) e ajustes no back-end: autenticação, controle de progresso, carregamento das trilhas e layout.</li>
     </ul>
     <div class="tags"><span>PHP</span><span>SQLite</span></div>
   </div>
@@ -205,6 +206,8 @@
       <li>Atalho direto para a trilha no painel e início do plano de evolução para SaaS, permitindo o uso por vários professores, cada um com as próprias turmas.</li>
       <li>Preparação da base para o SaaS: cópia de segurança dos dados, versionamento das regras de segurança do banco e montagem de um ambiente de testes com emuladores locais, sem risco para a produção.</li>
       <li>Primeira etapa do controle de acesso do SaaS: somente professores cadastrados conseguem entrar no painel.</li>
+      <li>Publicação em etapas no servidor: registro do plano, regras de segurança do Firestore e Storage no ar (versionadas no firebase.json) e login de aluno e diretor pelo servidor, com ranking sem exposição de dados pessoais.</li>
+      <li>Migração do Quiz Lingo e do CodeQuest para o novo servidor (easyreg.net.br), com script utilitário para trocar os links de qualquer domínio antigo pelo novo.</li>
     </ul>
     <div class="tags"><span>React</span><span>TypeScript</span><span>Firebase</span></div>
   </div>
@@ -228,6 +231,37 @@
       <li>Calendário com marcação dos dias de trabalho por escola e geração automática dos documentos em Word (.docx) a partir de modelos.</li>
     </ul>
     <div class="tags"><span>PHP</span><span>DOCX</span></div>
+  </div>
+
+  <div class="card">
+    <h3>Quiz Lingo</h3>
+    <div class="meta">Novo projeto · atualização em outubro/2026</div>
+    <ul>
+      <li>Quiz interativo para aulas: o professor cria questionários (múltipla escolha e resposta curta) e compartilha um link público para os alunos responderem, com resultado final de acertos e painel de respostas por quiz.</li>
+      <li>Importação de questionário a partir de PDF, lido no próprio navegador, preenchendo automaticamente enunciados, alternativas e gabarito.</li>
+      <li>Endpoint de resultados em JSON, protegido por token, para consumo por outros sistemas, e publicação no novo servidor (easyreg.net.br).</li>
+    </ul>
+    <div class="tags"><span>PHP</span><span>SQLite</span><span>PDF</span></div>
+  </div>
+
+  <div class="card">
+    <h3>GeoTrabalho Belém</h3>
+    <div class="meta">Novo projeto · atualização em outubro/2026</div>
+    <ul>
+      <li>Sistema de gestão territorial da secretaria: visualiza colaboradores, programas e serviços por distrito, bairro e local de atuação, sobre o mapa de Belém (Google Maps).</li>
+      <li>CRUD completo de colaboradores, distritos, bairros, programas, serviços, indicações, locais, perfis e usuários, com filtros, exportação CSV e interface responsiva.</li>
+      <li>Controle de acesso por perfis (administrador e consulta) e evolução do banco por migrations (perfis separados dos usuários, indicações como cadastro próprio, logs, coordenador e metas).</li>
+    </ul>
+    <div class="tags"><span>PHP</span><span>MySQL</span><span>Google Maps</span></div>
+  </div>
+
+  <div class="card">
+    <h3>Portal privado de projetos</h3>
+    <div class="meta">Ferramenta interna · atualização em outubro/2026</div>
+    <ul>
+      <li>Painel interno protegido por senha que lista os projetos e sites em desenvolvimento na máquina e dá acesso rápido a cada um, com cadastro de usuários e nomes amigáveis das pastas.</li>
+    </ul>
+    <div class="tags"><span>PHP</span></div>
   </div>
 
   <div class="card">
@@ -263,15 +297,16 @@
         <tr><td>Julho/2026</td><td class="num">45</td><td>Portal LiV</td></tr>
         <tr><td>Agosto/2026</td><td class="num">63</td><td>Casa LiV e projetos desenvolvidos em outra máquina</td></tr>
         <tr><td>Setembro/2026</td><td class="num">80</td><td>Leal Moreira e projetos desenvolvidos em outra máquina</td></tr>
-        <tr><td>Outubro/2026 (até dia 10)</td><td class="num">10</td><td>Leal Moreira, painel EAD Ciência e Robótica, CodeQuest, DevStep e EnemPara</td></tr>
-        <tr><th>Total</th><th class="num">198</th><th></th></tr>
+        <tr><td>Outubro/2026 (até dia 11)</td><td class="num">16</td><td>DevStep, CodeQuest, Quiz Lingo, GeoTrabalho Belém, Leal Moreira, painel EAD Ciência e Robótica e EnemPara</td></tr>
+        <tr><th>Total</th><th class="num">204</th><th></th></tr>
       </tbody>
     </table>
   </div>
   <p style="color:var(--muted);font-size:13px">
     Os números consideram os projetos versionados em Git (Portal LiV, Leal Moreira, painel EAD Ciência e Robótica, CodeQuest, DevStep e EnemPara) e, em agosto e setembro,
     também os commits feitos em outra máquina de trabalho. As landing pages WIN e os demais sistemas
-    não usam Git e não entram na contagem, embora tenham sido trabalhados em junho, setembro e outubro.
+    (como Quiz Lingo, GeoTrabalho Belém e o portal privado de projetos) não usam Git e não entram na
+    contagem, embora tenham sido trabalhados em junho, setembro e outubro.
   </p>
 </section>
 
